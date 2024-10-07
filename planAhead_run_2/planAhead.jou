@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:13:07 MDT 2013
+# Start of session at: Fri Apr 22 18:27:04 2016
+# Process ID: 9152
+# Log file: D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/planAhead_run_2/planAhead.log
+# Journal file: D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/pa.fromNetlist.tcl}
+set_property iostandard LVDS [get_ports [list IBERT_SYSCLOCK_I_p]]
+save_constraints

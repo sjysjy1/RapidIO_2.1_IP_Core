@@ -1,0 +1,890 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.27 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.27 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc7k325t-2-ffg900
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\iseprogra\clock using\kc705_fmc_IBERT\kc705_fmc_IBERT\ipcore_dir\icon_core.v" into library work
+Parsing module <icon_core>.
+Analyzing Verilog file "D:\iseprogra\clock using\kc705_fmc_IBERT\kc705_fmc_IBERT\ipcore_dir\ibert.v" into library work
+Parsing module <ibert>.
+Analyzing Verilog file "D:\iseprogra\clock using\kc705_fmc_IBERT\kc705_fmc_IBERT\top.v" into library work
+Parsing module <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top>.
+
+Elaborating module <IBUFDS(DIFF_TERM="FALSE",IOSTANDARD="DEFAULT")>.
+
+Elaborating module <IBUFDS_GTE2>.
+
+Elaborating module <ibert>.
+
+Elaborating module <icon_core>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "D:\iseprogra\clock using\kc705_fmc_IBERT\kc705_fmc_IBERT\top.v".
+    Summary:
+	no macro.
+Unit <top> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/ibert.ngc>.
+Reading core <ipcore_dir/icon_core.ngc>.
+Loading core <ibert> for timing and area information for instance <ibert_u>.
+Loading core <icon_core> for timing and area information for instance <icon_core_u>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 1.
+INFO:Xst:2260 - The FF/Latch <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_0> in Unit <U0/U_IBERT_CORE> is equivalent to the following FF/Latch : <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_0_1> 
+INFO:Xst:2260 - The FF/Latch <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_1> in Unit <U0/U_IBERT_CORE> is equivalent to the following FF/Latch : <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_1_1> 
+INFO:Xst:2260 - The FF/Latch <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_2> in Unit <U0/U_IBERT_CORE> is equivalent to the following FF/Latch : <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_2_1> 
+INFO:Xst:2260 - The FF/Latch <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_4> in Unit <U0/U_IBERT_CORE> is equivalent to the following FF/Latch : <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_4_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd2> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/user_valid> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_0> in Unit <U0/U_IBERT_CORE> is equivalent to the following FF/Latch : <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_0_1> 
+INFO:Xst:2260 - The FF/Latch <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_1> in Unit <U0/U_IBERT_CORE> is equivalent to the following FF/Latch : <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_1_1> 
+INFO:Xst:2260 - The FF/Latch <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_2> in Unit <U0/U_IBERT_CORE> is equivalent to the following FF/Latch : <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_2_1> 
+INFO:Xst:2260 - The FF/Latch <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_4> in Unit <U0/U_IBERT_CORE> is equivalent to the following FF/Latch : <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_4_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd2> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/user_valid> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_0> in Unit <U0/U_IBERT_CORE> is equivalent to the following FF/Latch : <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_0_1> 
+INFO:Xst:2260 - The FF/Latch <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_1> in Unit <U0/U_IBERT_CORE> is equivalent to the following FF/Latch : <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_1_1> 
+INFO:Xst:2260 - The FF/Latch <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_2> in Unit <U0/U_IBERT_CORE> is equivalent to the following FF/Latch : <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_2_1> 
+INFO:Xst:2260 - The FF/Latch <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_4> in Unit <U0/U_IBERT_CORE> is equivalent to the following FF/Latch : <U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/C_1PIPE_IFACE.s_daddr_r_4_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd2> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/user_valid> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd2> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/user_valid> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 10303
+#      GND                         : 5
+#      INV                         : 141
+#      LUT1                        : 1007
+#      LUT2                        : 1516
+#      LUT3                        : 726
+#      LUT4                        : 772
+#      LUT5                        : 779
+#      LUT6                        : 2907
+#      MUXCY                       : 1255
+#      MUXCY_L                     : 5
+#      MUXF5                       : 2
+#      MUXF6                       : 1
+#      MUXF7                       : 53
+#      VCC                         : 2
+#      XORCY                       : 1132
+# FlipFlops/Latches                : 11067
+#      FD                          : 3385
+#      FDC                         : 114
+#      FDCE                        : 150
+#      FDE                         : 4250
+#      FDP                         : 27
+#      FDPE                        : 8
+#      FDR                         : 1294
+#      FDRE                        : 1771
+#      FDS                         : 4
+#      FDSE                        : 64
+# RAMS                             : 12
+#      RAM32M                      : 4
+#      RAM32X1D                    : 8
+# Shift Registers                  : 291
+#      SRLC16E                     : 291
+# Clock Buffers                    : 10
+#      BUFG                        : 2
+#      BUFHCE                      : 8
+# IO Buffers                       : 20
+#      IBUF                        : 10
+#      IBUFDS                      : 1
+#      IBUFDS_GTE2                 : 1
+#      OBUF                        : 8
+# GigabitIOs                       : 5
+#      GTXE2_CHANNEL               : 4
+#      GTXE2_COMMON                : 1
+# Others                           : 2
+#      BSCANE2                     : 1
+#      MMCME2_ADV                  : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k325tffg900-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:           11067  out of  407600     2%  
+ Number of Slice LUTs:                 8171  out of  203800     4%  
+    Number used as Logic:              7848  out of  203800     3%  
+    Number used as Memory:              323  out of  64000     0%  
+       Number used as RAM:               32
+       Number used as SRL:              291
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:  14487
+   Number with an unused Flip Flop:    3420  out of  14487    23%  
+   Number with an unused LUT:          6316  out of  14487    43%  
+   Number of fully used LUT-FF pairs:  4751  out of  14487    32%  
+   Number of unique control sets:       368
+
+IO Utilization: 
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of    500     4%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRL/BUFHCEs:        10  out of    200     5%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------------+-----------------------------------------------------------------+-------+
+Clock Signal                                        | Clock buffer(FF name)                                           | Load  |
+----------------------------------------------------+-----------------------------------------------------------------+-------+
+ibert_u/U0/U_IBERT_CORE/ma_dclk_div                 | BUFG                                                            | 6162  |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/rx_userclk_int| BUFHCE                                                          | 849   |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/tx_userclk_int| BUFHCE                                                          | 389   |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/tx_userclk_int| BUFHCE                                                          | 389   |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/rx_userclk_int| BUFHCE                                                          | 849   |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/tx_userclk_int| BUFHCE                                                          | 389   |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/rx_userclk_int| BUFHCE                                                          | 849   |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/tx_userclk_int| BUFHCE                                                          | 389   |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/rx_userclk_int| BUFHCE                                                          | 849   |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/gt_txoutclk   | NONE(ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/U_INST_TX_BUFH_x0y12)| 1     |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/gt_rxoutclk   | NONE(ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/U_INST_BUFH_x0y12)   | 1     |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/gt_txoutclk   | NONE(ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/U_INST_TX_BUFH_x0y13)| 1     |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/gt_rxoutclk   | NONE(ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/U_INST_BUFH_x0y13)   | 1     |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/gt_txoutclk   | NONE(ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/U_INST_TX_BUFH_x0y14)| 1     |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/gt_rxoutclk   | NONE(ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/U_INST_BUFH_x0y14)   | 1     |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/gt_txoutclk   | NONE(ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/U_INST_TX_BUFH_x0y15)| 1     |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/gt_rxoutclk   | NONE(ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/U_INST_BUFH_x0y15)   | 1     |
+icon_core_u/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL  | BUFG                                                            | 255   |
+icon_core_u/U0/iUPDATE_OUT                          | NONE(icon_core_u/U0/U_ICON/U_iDATA_CMD)                         | 1     |
+----------------------------------------------------+-----------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 3.530ns (Maximum Frequency: 283.302MHz)
+   Minimum input arrival time before clock: 3.156ns
+   Maximum output required time after clock: 0.575ns
+   Maximum combinational path delay: 0.000ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ibert_u/U0/U_IBERT_CORE/ma_dclk_div'
+  Clock period: 3.305ns (frequency: 302.567MHz)
+  Total number of paths / destination ports: 91011 / 9945
+-------------------------------------------------------------------------
+Delay:               3.305ns (Levels of Logic = 5)
+  Source:            ibert_u/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BURST_WD_LEN_CONTROLLER/burst_wd_7 (FF)
+  Destination:       ibert_u/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/sl_den_r_4 (FF)
+  Source Clock:      ibert_u/U0/U_IBERT_CORE/ma_dclk_div rising
+  Destination Clock: ibert_u/U0/U_IBERT_CORE/ma_dclk_div rising
+
+  Data Path: ibert_u/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BURST_WD_LEN_CONTROLLER/burst_wd_7 to ibert_u/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/sl_den_r_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.236   0.618  U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BURST_WD_LEN_CONTROLLER/burst_wd_7 (U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BURST_WD_LEN_CONTROLLER/burst_wd<7>)
+     LUT6:I0->O            2   0.043   0.500  U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BURST_WD_LEN_CONTROLLER/WDC_EQ_ZERO_O<16>2 (U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BURST_WD_LEN_CONTROLLER/WDC_EQ_ZERO_O<16>1)
+     LUT6:I3->O            1   0.043   0.350  U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/current_state_FSM_FFd4-In4 (U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/current_state_FSM_FFd4-In3)
+     LUT6:I5->O            2   0.043   0.355  U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/current_state_FSM_FFd4-In5 (U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/current_state_FSM_FFd4-In4)
+     LUT6:I5->O            3   0.043   0.507  U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/current_state_FSM_FFd4-In6_1 (U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/current_state_FSM_FFd4-In6)
+     LUT5:I2->O            5   0.043   0.362  U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/_n0713_inv1 (U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/_n0713_inv)
+     FDCE:CE                   0.161          U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/sl_den_r_0
+    ----------------------------------------
+    Total                      3.305ns (0.612ns logic, 2.693ns route)
+                                       (18.5% logic, 81.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/tx_userclk_int'
+  Clock period: 1.916ns (frequency: 521.798MHz)
+  Total number of paths / destination ports: 2570 / 552
+-------------------------------------------------------------------------
+Delay:               1.916ns (Levels of Logic = 4)
+  Source:            ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/tei_dly1 (FF)
+  Destination:       ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/data_o_0 (FF)
+  Source Clock:      ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/tx_userclk_int rising
+  Destination Clock: ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/tx_userclk_int rising
+
+  Data Path: ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/tei_dly1 to ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/data_o_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.236   0.410  U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/tei_dly1 (U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/tei_dly1)
+     LUT2:I0->O            3   0.043   0.615  U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/tei_dly1_tei_dly2_AND_89_o1 (U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/tei_dly1_tei_dly2_AND_89_o)
+     LUT5:I0->O            1   0.043   0.000  U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/Mmux_pattern[0]_pattern[0]_MUX_423_o13_F (N1102)
+     MUXF7:I0->O           1   0.176   0.350  U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/Mmux_pattern[0]_pattern[0]_MUX_423_o13 (U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/Mmux_pattern[0]_pattern[0]_MUX_423_o12)
+     LUT6:I5->O            1   0.043   0.000  U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/Mmux_pattern[0]_pattern[0]_MUX_423_o14 (U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pattern[0]_pattern[0]_MUX_423_o)
+     FD:D                     -0.000          U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/data_o_0
+    ----------------------------------------
+    Total                      1.916ns (0.541ns logic, 1.375ns route)
+                                       (28.2% logic, 71.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/tx_userclk_int'
+  Clock period: 1.709ns (frequency: 585.161MHz)
+  Total number of paths / destination ports: 2566 / 552
+-------------------------------------------------------------------------
+Delay:               1.709ns (Levels of Logic = 2)
+  Source:            ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pat_id_r1_2 (FF)
+  Destination:       ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pattern_15bit/bit40.p15_40/prbs_0 (FF)
+  Source Clock:      ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/tx_userclk_int rising
+  Destination Clock: ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/tx_userclk_int rising
+
+  Data Path: ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pat_id_r1_2 to ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pattern_15bit/bit40.p15_40/prbs_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              48   0.236   0.655  U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pat_id_r1_2 (U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pat_id_r1<2>)
+     LUT4:I0->O           23   0.043   0.732  U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/Mmux_pattern1061 (U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/Mmux_pattern106)
+     LUT6:I0->O            1   0.043   0.000  U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pattern_15bit/bit40.p15_40/prbs[14]_seed_i[14]_mux_2_OUT<8>1 (U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pattern_15bit/bit40.p15_40/prbs[14]_seed_i[14]_mux_2_OUT<8>)
+     FDE:D                    -0.000          U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pattern_15bit/bit40.p15_40/prbs_8
+    ----------------------------------------
+    Total                      1.709ns (0.322ns logic, 1.387ns route)
+                                       (18.8% logic, 81.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/tx_userclk_int'
+  Clock period: 1.866ns (frequency: 535.883MHz)
+  Total number of paths / destination ports: 2566 / 552
+-------------------------------------------------------------------------
+Delay:               1.866ns (Levels of Logic = 3)
+  Source:            ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pat_id_r1_1 (FF)
+  Destination:       ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/data_o_0 (FF)
+  Source Clock:      ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/tx_userclk_int rising
+  Destination Clock: ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/tx_userclk_int rising
+
+  Data Path: ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pat_id_r1_1 to ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/data_o_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              48   0.236   0.746  U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pat_id_r1_1 (U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pat_id_r1<1>)
+     LUT6:I0->O            1   0.043   0.405  U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/Mmux_pattern[0]_pattern[0]_MUX_423_o12 (U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/Mmux_pattern[0]_pattern[0]_MUX_423_o11)
+     LUT3:I1->O            1   0.043   0.350  U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/Mmux_pattern[0]_pattern[0]_MUX_423_o13 (U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/Mmux_pattern[0]_pattern[0]_MUX_423_o12)
+     LUT6:I5->O            1   0.043   0.000  U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/Mmux_pattern[0]_pattern[0]_MUX_423_o14 (U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pattern[0]_pattern[0]_MUX_423_o)
+     FD:D                     -0.000          U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/data_o_0
+    ----------------------------------------
+    Total                      1.866ns (0.365ns logic, 1.501ns route)
+                                       (19.6% logic, 80.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/tx_userclk_int'
+  Clock period: 1.866ns (frequency: 535.883MHz)
+  Total number of paths / destination ports: 2566 / 552
+-------------------------------------------------------------------------
+Delay:               1.866ns (Levels of Logic = 3)
+  Source:            ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pat_id_r1_1 (FF)
+  Destination:       ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/data_o_0 (FF)
+  Source Clock:      ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/tx_userclk_int rising
+  Destination Clock: ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/tx_userclk_int rising
+
+  Data Path: ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pat_id_r1_1 to ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/data_o_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              48   0.236   0.746  U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pat_id_r1_1 (U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pat_id_r1<1>)
+     LUT6:I0->O            1   0.043   0.405  U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/Mmux_pattern[0]_pattern[0]_MUX_423_o12 (U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/Mmux_pattern[0]_pattern[0]_MUX_423_o11)
+     LUT3:I1->O            1   0.043   0.350  U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/Mmux_pattern[0]_pattern[0]_MUX_423_o13 (U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/Mmux_pattern[0]_pattern[0]_MUX_423_o12)
+     LUT6:I5->O            1   0.043   0.000  U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/Mmux_pattern[0]_pattern[0]_MUX_423_o14 (U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pattern[0]_pattern[0]_MUX_423_o)
+     FD:D                     -0.000          U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/data_o_0
+    ----------------------------------------
+    Total                      1.866ns (0.365ns logic, 1.501ns route)
+                                       (19.6% logic, 80.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'icon_core_u/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Clock period: 3.530ns (frequency: 283.302MHz)
+  Total number of paths / destination ports: 4304 / 547
+-------------------------------------------------------------------------
+Delay:               3.530ns (Levels of Logic = 6)
+  Source:            icon_core_u/U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET (FF)
+  Destination:       ibert_u/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2 (RAM)
+  Source Clock:      icon_core_u/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+  Destination Clock: icon_core_u/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+
+  Data Path: icon_core_u/U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET to ibert_u/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            18   0.236   0.617  U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET (U0/U_ICON/iCORE_ID<0>)
+     LUT4:I0->O           32   0.043   0.535  U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[0].U_LUT (U0/U_ICON/iCORE_ID_SEL<0>)
+     LUT4:I2->O           23   0.043   0.722  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[6].U_LCE (CONTROL0<10>)
+     end scope: 'icon_core_u:CONTROL0<10>'
+     begin scope: 'ibert_u:CONTROL<10>'
+     begin scope: 'ibert_u/U0/U_IBERT_CORE:control<10>'
+     LUT6:I1->O            4   0.043   0.422  U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/fifo_wr_en1 (U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/fifo_wr_en)
+     begin scope: 'ibert_u/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO:wr_en'
+     LUT2:I0->O           15   0.043   0.417  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/ram_wr_en_i1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_wr_en)
+     RAM32M:WE                 0.408          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2
+    ----------------------------------------
+    Total                      3.530ns (0.816ns logic, 2.714ns route)
+                                       (23.1% logic, 76.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/rx_userclk_int'
+  Clock period: 2.520ns (frequency: 396.755MHz)
+  Total number of paths / destination ports: 8721 / 1129
+-------------------------------------------------------------------------
+Delay:               2.520ns (Levels of Logic = 4)
+  Source:            ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1_1 (FF)
+  Destination:       ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/all_one_or_zero (FF)
+  Source Clock:      ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/rx_userclk_int rising
+  Destination Clock: ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/rx_userclk_int rising
+
+  Data Path: ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1_1 to ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/all_one_or_zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.236   0.630  U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1_1 (U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1<1>)
+     LUT6:I0->O            1   0.043   0.522  U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1[19]_data_r1[19]_OR_181_o1 (U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1[19]_data_r1[19]_OR_181_o)
+     LUT5:I1->O            1   0.043   0.613  U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1[19]_data_r1[19]_OR_181_o4 (U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1[19]_data_r1[19]_OR_181_o3)
+     LUT6:I0->O            1   0.043   0.000  U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1[19]_data_r1[19]_OR_181_o8 (U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r2[39]_data_r1[19]_AND_94_o_norst)
+     MUXCY:S->O            1   0.390   0.000  U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/all_one_or_zero_rstpot_cy (U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/all_one_or_zero_rstpot)
+     FD:D                     -0.000          U_GTCPX_X0Y12/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/all_one_or_zero
+    ----------------------------------------
+    Total                      2.520ns (0.755ns logic, 1.765ns route)
+                                       (30.0% logic, 70.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/rx_userclk_int'
+  Clock period: 2.520ns (frequency: 396.755MHz)
+  Total number of paths / destination ports: 8715 / 1129
+-------------------------------------------------------------------------
+Delay:               2.520ns (Levels of Logic = 4)
+  Source:            ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1_1 (FF)
+  Destination:       ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/all_one_or_zero (FF)
+  Source Clock:      ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/rx_userclk_int rising
+  Destination Clock: ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/rx_userclk_int rising
+
+  Data Path: ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1_1 to ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/all_one_or_zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.236   0.630  U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1_1 (U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1<1>)
+     LUT6:I0->O            1   0.043   0.522  U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1[19]_data_r1[19]_OR_181_o1 (U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1[19]_data_r1[19]_OR_181_o)
+     LUT5:I1->O            1   0.043   0.613  U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1[19]_data_r1[19]_OR_181_o4 (U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1[19]_data_r1[19]_OR_181_o3)
+     LUT6:I0->O            1   0.043   0.000  U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1[19]_data_r1[19]_OR_181_o8 (U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r2[39]_data_r1[19]_AND_94_o_norst)
+     MUXCY:S->O            1   0.390   0.000  U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/all_one_or_zero_rstpot_cy (U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/all_one_or_zero_rstpot)
+     FD:D                     -0.000          U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/all_one_or_zero
+    ----------------------------------------
+    Total                      2.520ns (0.755ns logic, 1.765ns route)
+                                       (30.0% logic, 70.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/rx_userclk_int'
+  Clock period: 2.520ns (frequency: 396.755MHz)
+  Total number of paths / destination ports: 8715 / 1129
+-------------------------------------------------------------------------
+Delay:               2.520ns (Levels of Logic = 4)
+  Source:            ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1_1 (FF)
+  Destination:       ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/all_one_or_zero (FF)
+  Source Clock:      ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/rx_userclk_int rising
+  Destination Clock: ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/rx_userclk_int rising
+
+  Data Path: ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1_1 to ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/all_one_or_zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.236   0.630  U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1_1 (U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1<1>)
+     LUT6:I0->O            1   0.043   0.522  U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1[19]_data_r1[19]_OR_181_o1 (U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1[19]_data_r1[19]_OR_181_o)
+     LUT5:I1->O            1   0.043   0.613  U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1[19]_data_r1[19]_OR_181_o4 (U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1[19]_data_r1[19]_OR_181_o3)
+     LUT6:I0->O            1   0.043   0.000  U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1[19]_data_r1[19]_OR_181_o8 (U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r2[39]_data_r1[19]_AND_94_o_norst)
+     MUXCY:S->O            1   0.390   0.000  U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/all_one_or_zero_rstpot_cy (U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/all_one_or_zero_rstpot)
+     FD:D                     -0.000          U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/all_one_or_zero
+    ----------------------------------------
+    Total                      2.520ns (0.755ns logic, 1.765ns route)
+                                       (30.0% logic, 70.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/rx_userclk_int'
+  Clock period: 2.520ns (frequency: 396.755MHz)
+  Total number of paths / destination ports: 8715 / 1129
+-------------------------------------------------------------------------
+Delay:               2.520ns (Levels of Logic = 4)
+  Source:            ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1_1 (FF)
+  Destination:       ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/all_one_or_zero (FF)
+  Source Clock:      ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/rx_userclk_int rising
+  Destination Clock: ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/rx_userclk_int rising
+
+  Data Path: ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1_1 to ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/all_one_or_zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.236   0.630  U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1_1 (U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1<1>)
+     LUT6:I0->O            1   0.043   0.522  U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1[19]_data_r1[19]_OR_181_o1 (U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1[19]_data_r1[19]_OR_181_o)
+     LUT5:I1->O            1   0.043   0.613  U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1[19]_data_r1[19]_OR_181_o4 (U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1[19]_data_r1[19]_OR_181_o3)
+     LUT6:I0->O            1   0.043   0.000  U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r1[19]_data_r1[19]_OR_181_o8 (U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/data_r2[39]_data_r1[19]_AND_94_o_norst)
+     MUXCY:S->O            1   0.390   0.000  U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/all_one_or_zero_rstpot_cy (U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/all_one_or_zero_rstpot)
+     FD:D                     -0.000          U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/all_one_or_zero
+    ----------------------------------------
+    Total                      2.520ns (0.755ns logic, 1.765ns route)
+                                       (30.0% logic, 70.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'icon_core_u/U0/iUPDATE_OUT'
+  Clock period: 0.980ns (frequency: 1020.200MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               0.980ns (Levels of Logic = 1)
+  Source:            icon_core_u/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination:       icon_core_u/U0/U_ICON/U_iDATA_CMD (FF)
+  Source Clock:      icon_core_u/U0/iUPDATE_OUT rising
+  Destination Clock: icon_core_u/U0/iUPDATE_OUT rising
+
+  Data Path: icon_core_u/U0/U_ICON/U_iDATA_CMD to icon_core_u/U0/U_ICON/U_iDATA_CMD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.236   0.351  U0/U_ICON/U_iDATA_CMD (U0/U_ICON/iDATA_CMD)
+     INV:I->O              1   0.054   0.339  U0/U_ICON/U_iDATA_CMD_n (U0/U_ICON/iDATA_CMD_n)
+     FDC:D                    -0.000          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      0.980ns (0.290ns logic, 0.690ns route)
+                                       (29.6% logic, 70.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'icon_core_u/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Total number of paths / destination ports: 291 / 272
+-------------------------------------------------------------------------
+Offset:              3.156ns (Levels of Logic = 6)
+  Source:            icon_core_u/U0/U_ICON/I_YES_BSCAN.U_BS/I_K7.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT (PAD)
+  Destination:       ibert_u/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2 (RAM)
+  Destination Clock: icon_core_u/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+
+  Data Path: icon_core_u/U0/U_ICON/I_YES_BSCAN.U_BS/I_K7.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT to ibert_u/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCANE2:SHIFT          3   0.000   0.362  U0/U_ICON/I_YES_BSCAN.U_BS/I_K7.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/iSHIFT_OUT)
+     LUT2:I1->O           32   0.043   0.652  U0/U_ICON/U_CTRL_OUT/U_DATA_VALID (U0/U_ICON/U_CTRL_OUT/iDATA_VALID)
+     LUT4:I0->O           23   0.043   0.722  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[6].U_LCE (CONTROL0<10>)
+     end scope: 'icon_core_u:CONTROL0<10>'
+     begin scope: 'ibert_u:CONTROL<10>'
+     begin scope: 'ibert_u/U0/U_IBERT_CORE:control<10>'
+     LUT6:I1->O            4   0.043   0.422  U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/fifo_wr_en1 (U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/fifo_wr_en)
+     begin scope: 'ibert_u/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO:wr_en'
+     LUT2:I0->O           15   0.043   0.417  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/ram_wr_en_i1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_wr_en)
+     RAM32M:WE                 0.408          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2
+    ----------------------------------------
+    Total                      3.156ns (0.580ns logic, 2.576ns route)
+                                       (18.4% logic, 81.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ibert_u/U0/U_IBERT_CORE/ma_dclk_div'
+  Total number of paths / destination ports: 62 / 62
+-------------------------------------------------------------------------
+Offset:              2.401ns (Levels of Logic = 5)
+  Source:            icon_core_u/U0/U_ICON/I_YES_BSCAN.U_BS/I_K7.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT (PAD)
+  Destination:       ibert_u/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg (FF)
+  Destination Clock: ibert_u/U0/U_IBERT_CORE/ma_dclk_div rising
+
+  Data Path: icon_core_u/U0/U_ICON/I_YES_BSCAN.U_BS/I_K7.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT to ibert_u/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCANE2:SHIFT          3   0.000   0.362  U0/U_ICON/I_YES_BSCAN.U_BS/I_K7.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/iSHIFT_OUT)
+     LUT2:I1->O           32   0.043   0.652  U0/U_ICON/U_CTRL_OUT/U_DATA_VALID (U0/U_ICON/U_CTRL_OUT/iDATA_VALID)
+     LUT4:I0->O           23   0.043   0.524  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[5].U_LCE (CONTROL0<9>)
+     end scope: 'icon_core_u:CONTROL0<9>'
+     begin scope: 'ibert_u:CONTROL<9>'
+     begin scope: 'ibert_u/U0/U_IBERT_CORE:control<9>'
+     LUT2:I0->O           36   0.043   0.470  U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/rddata_rst1 (U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/rddata_rst)
+     begin scope: 'ibert_u/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO:rst'
+     FDPE:PRE                  0.264          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg
+    ----------------------------------------
+    Total                      2.401ns (0.393ns logic, 2.008ns route)
+                                       (16.4% logic, 83.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'icon_core_u/U0/iUPDATE_OUT'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.001ns (Levels of Logic = 1)
+  Source:            icon_core_u/U0/U_ICON/I_YES_BSCAN.U_BS/I_K7.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SEL (PAD)
+  Destination:       icon_core_u/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination Clock: icon_core_u/U0/iUPDATE_OUT rising
+
+  Data Path: icon_core_u/U0/U_ICON/I_YES_BSCAN.U_BS/I_K7.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SEL to icon_core_u/U0/U_ICON/U_iDATA_CMD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCANE2:SEL            2   0.000   0.344  U0/U_ICON/I_YES_BSCAN.U_BS/I_K7.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/U_ICON/iSEL)
+     INV:I->O              1   0.054   0.339  U0/U_ICON/U_iSEL_n (U0/U_ICON/iSEL_n)
+     FDC:CLR                   0.264          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      1.001ns (0.318ns logic, 0.683ns route)
+                                       (31.8% logic, 68.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'icon_core_u/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.575ns (Levels of Logic = 0)
+  Source:            ibert_u/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD7_CTL/shift_reg_in_0 (FF)
+  Destination:       ibert_u/U0/U_IBERT_CORE/U_MA_DCLK_DIVIDER/mmcm_adv_inst:RST (PAD)
+  Source Clock:      icon_core_u/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+
+  Data Path: ibert_u/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD7_CTL/shift_reg_in_0 to ibert_u/U0/U_IBERT_CORE/U_MA_DCLK_DIVIDER/mmcm_adv_inst:RST
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.236   0.339  U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD7_CTL/shift_reg_in_0 (U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD7_CTL/shift_reg_in<0>)
+    MMCME2_ADV:RST             0.000          U_MA_DCLK_DIVIDER/mmcm_adv_inst
+    ----------------------------------------
+    Total                      0.575ns (0.236ns logic, 0.339ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               0.000ns (Levels of Logic = 0)
+  Source:            ibert_u/U0/U_IBERT_CORE/U_MA_DCLK_DIVIDER/mmcm_adv_inst:CLKFBOUT (PAD)
+  Destination:       ibert_u/U0/U_IBERT_CORE/U_MA_DCLK_DIVIDER/mmcm_adv_inst:CLKFBIN (PAD)
+
+  Data Path: ibert_u/U0/U_IBERT_CORE/U_MA_DCLK_DIVIDER/mmcm_adv_inst:CLKFBOUT to ibert_u/U0/U_IBERT_CORE/U_MA_DCLK_DIVIDER/mmcm_adv_inst:CLKFBIN
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    MMCME2_ADV:CLKFBOUT    0   0.000   0.000  U_MA_DCLK_DIVIDER/mmcm_adv_inst (U_MA_DCLK_DIVIDER/clkfbout)
+    MMCME2_ADV:CLKFBIN         0.000          U_MA_DCLK_DIVIDER/mmcm_adv_inst
+    ----------------------------------------
+    Total                      0.000ns (0.000ns logic, 0.000ns route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/rx_userclk_int
+----------------------------------------------------+---------+---------+---------+---------+
+                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------------+---------+---------+---------+---------+
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/rx_userclk_int|    2.520|         |         |         |
+ibert_u/U0/U_IBERT_CORE/ma_dclk_div                 |    1.590|         |         |         |
+----------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/tx_userclk_int
+----------------------------------------------------+---------+---------+---------+---------+
+                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------------+---------+---------+---------+---------+
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/tx_userclk_int|    1.916|         |         |         |
+ibert_u/U0/U_IBERT_CORE/ma_dclk_div                 |    1.590|         |         |         |
+----------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/rx_userclk_int
+----------------------------------------------------+---------+---------+---------+---------+
+                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------------+---------+---------+---------+---------+
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/rx_userclk_int|    2.520|         |         |         |
+ibert_u/U0/U_IBERT_CORE/ma_dclk_div                 |    1.590|         |         |         |
+----------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/tx_userclk_int
+----------------------------------------------------+---------+---------+---------+---------+
+                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------------+---------+---------+---------+---------+
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/tx_userclk_int|    1.709|         |         |         |
+ibert_u/U0/U_IBERT_CORE/ma_dclk_div                 |    1.590|         |         |         |
+----------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/rx_userclk_int
+----------------------------------------------------+---------+---------+---------+---------+
+                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------------+---------+---------+---------+---------+
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/rx_userclk_int|    2.520|         |         |         |
+ibert_u/U0/U_IBERT_CORE/ma_dclk_div                 |    1.590|         |         |         |
+----------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/tx_userclk_int
+----------------------------------------------------+---------+---------+---------+---------+
+                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------------+---------+---------+---------+---------+
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/tx_userclk_int|    1.866|         |         |         |
+ibert_u/U0/U_IBERT_CORE/ma_dclk_div                 |    1.590|         |         |         |
+----------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/rx_userclk_int
+----------------------------------------------------+---------+---------+---------+---------+
+                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------------+---------+---------+---------+---------+
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/rx_userclk_int|    2.520|         |         |         |
+ibert_u/U0/U_IBERT_CORE/ma_dclk_div                 |    1.590|         |         |         |
+----------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/tx_userclk_int
+----------------------------------------------------+---------+---------+---------+---------+
+                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------------+---------+---------+---------+---------+
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/tx_userclk_int|    1.866|         |         |         |
+ibert_u/U0/U_IBERT_CORE/ma_dclk_div                 |    1.590|         |         |         |
+----------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ibert_u/U0/U_IBERT_CORE/ma_dclk_div
+----------------------------------------------------+---------+---------+---------+---------+
+                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------------+---------+---------+---------+---------+
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/rx_userclk_int|    1.036|         |         |         |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y12/tx_userclk_int|    0.580|         |         |         |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/rx_userclk_int|    1.036|         |         |         |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y13/tx_userclk_int|    0.580|         |         |         |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/rx_userclk_int|    1.036|         |         |         |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y14/tx_userclk_int|    0.580|         |         |         |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/rx_userclk_int|    1.036|         |         |         |
+ibert_u/U0/U_IBERT_CORE/U_GTCPX_X0Y15/tx_userclk_int|    0.580|         |         |         |
+ibert_u/U0/U_IBERT_CORE/ma_dclk_div                 |    3.305|         |         |         |
+icon_core_u/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL  |    2.775|         |         |         |
+----------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock icon_core_u/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL
+--------------------------------------------------+---------+---------+---------+---------+
+                                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------------+---------+---------+---------+---------+
+ibert_u/U0/U_IBERT_CORE/ma_dclk_div               |    1.919|         |         |         |
+icon_core_u/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    3.530|         |         |         |
+icon_core_u/U0/iUPDATE_OUT                        |    1.283|         |         |         |
+--------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock icon_core_u/U0/iUPDATE_OUT
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+icon_core_u/U0/iUPDATE_OUT|    0.980|         |         |         |
+--------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 65.00 secs
+Total CPU time to Xst completion: 64.78 secs
+ 
+--> 
+
+Total memory usage is 533952 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :   49 (   0 filtered)
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="LIT" num="701" delta="new" ><arg fmt="%s" index="1">PAD symbol &quot;IBERT_SYSCLOCK_I_n&quot;</arg> has an undefined IOSTANDARD.
+</msg>
+
+<msg type="warning" file="LIT" num="702" delta="old" ><arg fmt="%s" index="1">PAD symbol &quot;IBERT_SYSCLOCK_I_n&quot;</arg> is not constrained (LOC) to a specific location.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">CONTROL&lt;0&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">37</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">CONTROL&lt;1&gt;,
+CONTROL&lt;2&gt;,
+CONTROL&lt;3&gt;,
+CONTROL&lt;4&gt;,
+CONTROL&lt;5&gt;</arg>
+To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+<msg type="warning" file="Pack" num="2949" delta="new" >The I/O component <arg fmt="%s" index="1">IBERT_SYSCLOCK_I_p</arg> uses an DQS_BIAS attribute with I/O standard <arg fmt="%s" index="2">LVDS</arg>. The DQS_BIAS attribute will be ignored since the selected I/O standard does not support DQS_BIAS usage.
+</msg>
+
+<msg type="warning" file="Pack" num="2949" delta="new" >The I/O component <arg fmt="%s" index="1">IBERT_SYSCLOCK_I_n</arg> uses an DQS_BIAS attribute with I/O standard <arg fmt="%s" index="2">LVDS</arg>. The DQS_BIAS attribute will be ignored since the selected I/O standard does not support DQS_BIAS usage.
+</msg>
+
+<msg type="info" file="Pack" num="1716" delta="old" >Initializing temperature to <arg fmt="%0.3f" index="1">85.000</arg> Celsius. (default - Range: <arg fmt="%0.3f" index="2">0.000</arg> to <arg fmt="%0.3f" index="3">85.000</arg> Celsius)
+</msg>
+
+<msg type="info" file="Pack" num="1720" delta="old" >Initializing voltage to <arg fmt="%0.3f" index="1">0.970</arg> Volts. (default - Range: <arg fmt="%0.3f" index="2">0.970</arg> to <arg fmt="%0.3f" index="3">1.030</arg> Volts)
+</msg>
+
+<msg type="info" file="Map" num="215" delta="old" >The Interim Design Summary has been generated in the MAP Report (.mrp).
+</msg>
+
+<msg type="info" file="Pack" num="1650" delta="old" >Map created a placed design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">ibert_u/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAMD_D1_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">ibert_u/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_K7.U_WR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2_RAMD_D1_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">ibert_u/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAMD_D1_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">ibert_u/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_K7.U_RD_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2_RAMD_D1_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+</messages>
+

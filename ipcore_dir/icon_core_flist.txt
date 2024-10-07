@@ -1,0 +1,17 @@
+# Output products list for <icon_core>
+_xmsgs\pn_parser.xmsgs
+icon_core.asy
+icon_core.constraints\icon_core.ucf
+icon_core.constraints\icon_core.xdc
+icon_core.gise
+icon_core.ngc
+icon_core.sym
+icon_core.ucf
+icon_core.v
+icon_core.veo
+icon_core.xco
+icon_core.xdc
+icon_core.xise
+icon_core_flist.txt
+icon_core_readme.txt
+icon_core_xmdf.tcl

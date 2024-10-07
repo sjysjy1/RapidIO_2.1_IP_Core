@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\iseprogra\clock using\kc705_fmc_IBERT\kc705_fmc_IBERT\top.ncd
+OUTFILE=D:\iseprogra\clock using\kc705_fmc_IBERT\kc705_fmc_IBERT\top.bit
+FAMILY=Kintex7
+PART=xc7k325t-2ffg900
+WORKINGDIR=D:\iseprogra\clock using\kc705_fmc_IBERT\kc705_fmc_IBERT
+LICENSE=ISE
+USER_INFO=_

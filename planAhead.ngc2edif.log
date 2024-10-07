@@ -1,0 +1,121 @@
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design ibert.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/next_state
+   <4 : 0> on block ibert_core is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00302/I_EN_
+   STAT_EQ1.U_STAT/xsdb_reg<10 : 0> on block ibert_core is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/pattern_clk20/da
+   ta_o<18 : 0> on block ibert_core is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y13/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00302/I_EN_
+   STAT_EQ1.U_STAT/xsdb_reg<10 : 0> on block ibert_core is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/pattern_clk20/da
+   ta_o<18 : 0> on block ibert_core is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y14/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00302/I_EN_
+   STAT_EQ1.U_STAT/xsdb_reg<10 : 0> on block ibert_core is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/pattern_clk20/da
+   ta_o<18 : 0> on block ibert_core is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y15/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00302/I_EN_
+   STAT_EQ1.U_STAT/xsdb_reg<10 : 0> on block ibert_core is not reconstructed,
+   because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ibert.edif ...
+ngc2edif: Total memory usage is 124176 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design icon_core.ngc ...
+WARNING:NetListWriters:298 - No output is written to icon_core.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   icon_core is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file icon_core.edif ...
+ngc2edif: Total memory usage is 82384 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design top.ngc ...
+WARNING:NetListWriters:298 - No output is written to top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file top.edif ...
+ngc2edif: Total memory usage is 81424 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design ibert.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/next_state
+   <4 : 0> on block ibert_core is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00302/I_EN_
+   STAT_EQ1.U_STAT/xsdb_reg<10 : 0> on block ibert_core is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/pattern_clk20/da
+   ta_o<18 : 0> on block ibert_core is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y13/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00302/I_EN_
+   STAT_EQ1.U_STAT/xsdb_reg<10 : 0> on block ibert_core is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/pattern_clk20/da
+   ta_o<18 : 0> on block ibert_core is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y14/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00302/I_EN_
+   STAT_EQ1.U_STAT/xsdb_reg<10 : 0> on block ibert_core is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/pattern_clk20/da
+   ta_o<18 : 0> on block ibert_core is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y15/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00302/I_EN_
+   STAT_EQ1.U_STAT/xsdb_reg<10 : 0> on block ibert_core is not reconstructed,
+   because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ibert.edif ...
+ngc2edif: Total memory usage is 124240 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design icon_core.ngc ...
+WARNING:NetListWriters:298 - No output is written to icon_core.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   icon_core is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file icon_core.edif ...
+ngc2edif: Total memory usage is 82768 kilobytes
+

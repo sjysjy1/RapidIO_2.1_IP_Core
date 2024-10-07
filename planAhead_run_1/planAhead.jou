@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:13:07 MDT 2013
+# Start of session at: Fri Apr 22 18:04:28 2016
+# Process ID: 9640
+# Log file: D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/planAhead_run_1/planAhead.log
+# Journal file: D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin AD12 [get_ports IBERT_SYSCLOCK_I_p]
+endgroup
+startgroup
+set_property package_pin G8 [get_ports Q3_CLK0_MGTREFCLK_P]
+endgroup
+startgroup
+set_property package_pin E4 [get_ports X0Y12_RX_P_IPAD]
+endgroup
+startgroup
+set_property package_pin D2 [get_ports X0Y12_TX_P_OPAD]
+endgroup
+startgroup
+set_property package_pin D6 [get_ports X0Y13_RX_P_IPAD]
+endgroup
+startgroup
+set_property package_pin C4 [get_ports X0Y13_TX_P_OPAD]
+endgroup
+startgroup
+set_property package_pin B6 [get_ports X0Y14_RX_P_IPAD]
+endgroup
+startgroup
+set_property package_pin B2 [get_ports X0Y14_TX_P_OPAD]
+endgroup
+startgroup
+set_property package_pin A8 [get_ports X0Y15_RX_P_IPAD]
+endgroup
+startgroup
+set_property package_pin A4 [get_ports X0Y15_TX_P_OPAD]
+endgroup
+save_constraints

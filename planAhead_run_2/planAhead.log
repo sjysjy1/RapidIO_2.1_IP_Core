@@ -1,0 +1,154 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:13:07 MDT 2013
+# Start of session at: Fri Apr 22 18:27:04 2016
+# Process ID: 9152
+# Log file: D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/planAhead_run_2/planAhead.log
+# Journal file: D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+INFO: [Common 17-81] Feature available: PartialReconfiguration
+source {D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/pa.fromNetlist.tcl}
+# create_project -name kc705_fmc_IBERT -dir "D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/planAhead_run_2" -part xc7k325tffg900-2
+create_project: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 463.063 ; gain = 50.211
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/top.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT} {ipcore_dir} }
+# add_files [list {ipcore_dir/ibert.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/icon_core.ncf}] -fileset [get_property constrset [current_run]]
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "top.ucf" [current_fileset -constrset]
+Adding file 'D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/top.ucf' to fileset 'constrs_1'
+# add_files [list {top.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc7k325tffg900-2
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design top.ngc ...
+WARNING:NetListWriters:298 - No output is written to top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file top.edif ...
+ngc2edif: Total memory usage is 81424 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/kc705_fmc_IBERT.data/cache/top_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/kc705_fmc_IBERT.data/cache/top_ngc_zx.edif]
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design ibert.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/next_state
+   <4 : 0> on block ibert_core is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y12/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00302/I_EN_
+   STAT_EQ1.U_STAT/xsdb_reg<10 : 0> on block ibert_core is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y13/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/pattern_clk20/da
+   ta_o<18 : 0> on block ibert_core is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y13/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00302/I_EN_
+   STAT_EQ1.U_STAT/xsdb_reg<10 : 0> on block ibert_core is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y14/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/pattern_clk20/da
+   ta_o<18 : 0> on block ibert_core is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y14/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00302/I_EN_
+   STAT_EQ1.U_STAT/xsdb_reg<10 : 0> on block ibert_core is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y15/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/pattern_clk20/da
+   ta_o<18 : 0> on block ibert_core is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_GTCPX_X0Y15/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00302/I_EN_
+   STAT_EQ1.U_STAT/xsdb_reg<10 : 0> on block ibert_core is not reconstructed,
+   because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ibert.edif ...
+ngc2edif: Total memory usage is 124240 kilobytes
+
+Reading core file 'D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/ipcore_dir/ibert.ngc' for (cell view 'ibert', library 'top_lib', file 'top.ngc')
+Parsing EDIF File [./planAhead_run_2/kc705_fmc_IBERT.data/cache/ibert_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/kc705_fmc_IBERT.data/cache/ibert_ngc_zx.edif]
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design icon_core.ngc ...
+WARNING:NetListWriters:298 - No output is written to icon_core.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   icon_core is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file icon_core.edif ...
+ngc2edif: Total memory usage is 82768 kilobytes
+
+Reading core file 'D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/ipcore_dir/icon_core.ngc' for (cell view 'icon_core', library 'top_lib', file 'top.ngc')
+Parsing EDIF File [./planAhead_run_2/kc705_fmc_IBERT.data/cache/icon_core_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/kc705_fmc_IBERT.data/cache/icon_core_ngc_zx.edif]
+INFO: [Netlist 29-17] Analyzing 9095 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'top' is not ideal for floorplanning, since the cellview 'ibert_core' defined in file 'ibert.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from D:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/kintex7/kintex7/xc7k325t/ClockRegion.xml
+Loading clock buffers from D:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/kintex7/kintex7/xc7k325t/ClockBuffers.xml
+Loading clock placement rules from D:/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/kintex7/ClockPlacerRules.xml
+Loading package pin functions from D:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/kintex7/PinFunctions.xml...
+Loading package from D:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/kintex7/kintex7/xc7k325t/ffg900/Package.xml
+Loading io standards from D:/Xilinx/14.5/ISE_DS/PlanAhead/data\./parts/xilinx/kintex7/IOStandards.xml
+Loading device configuration modes from D:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/kintex7/ConfigModes.xml
+Loading list of drcs for the architecture : D:/Xilinx/14.5/ISE_DS/PlanAhead/data\./parts/xilinx/kintex7/drc.xml
+Parsing UCF File [D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/ipcore_dir/ibert.ncf]
+Finished Parsing UCF File [D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/ipcore_dir/ibert.ncf]
+Parsing UCF File [D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/ipcore_dir/icon_core.ncf]
+Finished Parsing UCF File [D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/ipcore_dir/icon_core.ncf]
+Parsing UCF File [D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/.Xil/PlanAhead-9152-1BZ1UXDZQFUDROZ/ngc2edif/ibert.xncf]
+Finished Parsing UCF File [D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/.Xil/PlanAhead-9152-1BZ1UXDZQFUDROZ/ngc2edif/ibert.xncf]
+Parsing UCF File [D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/top.ucf]
+Finished Parsing UCF File [D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/top.ucf]
+Parsing UCF File [D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/.Xil/PlanAhead-9152-1BZ1UXDZQFUDROZ/ngc2edif/ibert.xncf]
+Finished Parsing UCF File [D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/.Xil/PlanAhead-9152-1BZ1UXDZQFUDROZ/ngc2edif/ibert.xncf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9094 instances were transformed.
+  FD => FDCE: 3385 instances
+  FDC => FDCE: 114 instances
+  FDE => FDCE: 4250 instances
+  FDP => FDPE: 27 instances
+  FDR => FDRE: 1294 instances
+  FDS => FDSE: 4 instances
+  MUXCY_L => MUXCY: 5 instances
+  MUXF5 => LUT3: 2 instances
+  MUXF6 => LUT3: 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 8 instances
+
+Phase 0 | Netlist Checksum: 299a7d54
+link_design: Time (s): elapsed = 00:00:47 . Memory (MB): peak = 954.633 ; gain = 482.992
+set_property iostandard LVDS [get_ports [list IBERT_SYSCLOCK_I_p]]
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT\planAhead_pid9152.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Fri Apr 22 18:29:28 2016...
+INFO: [Common 17-83] Releasing license: PlanAhead

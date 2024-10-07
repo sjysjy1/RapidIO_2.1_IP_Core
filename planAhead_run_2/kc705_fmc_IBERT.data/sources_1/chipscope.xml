@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ChipScope Version="1" Minor="3">
+	<Core Id="ibert_u" Type="chipscope_ibert7seriesgtx_v2">
+		<CoreStatus isImpl="1" isFromHDL="1"/>
+		<CoreParams Id="DebugCoreParams">
+		</CoreParams>
+	</Core>
+	<Core Id="icon_core_u" Type="chipscope_icon_v1">
+		<CoreStatus isImpl="1" isFromHDL="0"/>
+		<CoreParams Id="DebugCoreParams">
+			<Option Id="UserScanChain">0</Option>
+		</CoreParams>
+	</Core>
+	<UnassignedNets>
+	</UnassignedNets>
+</ChipScope>
+

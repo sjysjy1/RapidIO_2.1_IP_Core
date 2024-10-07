@@ -1,0 +1,2 @@
+verilog work "../example_design/example_ibert.v"
+verilog work "../example_design/example_ibert_bb.v"

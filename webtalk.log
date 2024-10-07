@@ -1,0 +1,16 @@
+Release 14.5 - WebTalk (P.58f)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Project Information
+--------------------
+ProjectID=A7896259A7D1425AB6D1674C989A558D
+ProjectIteration=2
+
+WebTalk Summary
+----------------
+INFO:WebTalk:2 - WebTalk is enabled.
+
+INFO:WebTalk:8 - WebTalk Install setting is ON.
+INFO:WebTalk:6 - WebTalk User setting is ON.
+
+INFO:WebTalk:4 - D:/iseprogra/clock using/kc705_fmc_IBERT/kc705_fmc_IBERT/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2016-04-22T18:44:20.  For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/14.5/ISE_DS/ISE/data/reports/webtalk_introduction.html
